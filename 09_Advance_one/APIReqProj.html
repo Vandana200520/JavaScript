@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> API Request</title>
+</head>
+<body>
+    <!-- <h1> API Request </h1> -->
+</body>
+<script>
+    const myURL = 'https://api.github.com/users/Vandana200520'
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', myURL)
+
+
+    xhr.onreadystatechange = function() {
+        // console.log(xhr.readyState)
+        if( xhr.readyState === 4){                               //data mostly comes in string form
+            const data = JSON.parse(this.responseText)           //it converts string into object or JSON
+            // console.log(data.avatar_url);
+            // console.log(data.followers);
+
+            const body = document.querySelector('body')
+            body.style.backgroundColor = "#212121"
+            const div = document.createElement('div')
+            const h2 = document.createElement('h2')
+            div.innerHTML = data.avatar_url
+            h2.innerHTML = `followers: ${data.followers}`
+            div.style.margin = '50px'
+            div.style.marginBottom = '10px'
+            h2.style.marginLeft = '80px'
+            h2.style.color = 'white'
+            body.appendChild(div)
+            body.appendChild(h2)
+        }
+    }
+    xhr.send()
+
+    //picture with followers written below
+    // const body = document.querySelector('body')
+    // const div = document.createElement('div')
+    // div.innerHTML = '<img src = https://avatars.githubusercontent.com/u/157909108?v=4 height="200px" width="200px">'
+    // body.appendChild(div)
+</script>
+</html>

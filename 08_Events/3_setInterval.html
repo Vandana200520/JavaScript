@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h1> This is a heading. </h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    // setInterval(function(){
+    //     console.log("vanduuu");
+    // },1000)
+
+    // const myName = function(){
+    //     console.log("vanduuu");
+    // }
+    // setInterval(myName,1000)
+
+
+    const sayHi = function(str){
+        console.log(str);
+    }
+
+    let interval;
+    document.querySelector('#start').addEventListener('click',function(){
+       interval = setInterval(sayHi,1000,"hii")
+    })
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(interval)
+    })
+
+</script>
+</html>

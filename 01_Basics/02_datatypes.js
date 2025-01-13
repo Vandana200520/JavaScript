@@ -16,8 +16,8 @@ let IsLoggedIn = true
 // bigint = for very large numbers
 // string = in doubleQuotes
 // boolean = true/false
-// null = standalone value(object)
-// undefined 
+// null = standalone value(object)    // value is empty
+// undefined => value has not assigned yet
 // symbol = for uniqueness
 
 // object

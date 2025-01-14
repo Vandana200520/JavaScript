@@ -28,7 +28,7 @@ console.log(numberScore3);
 console.log(typeof(numberScore3));
 
 // NumberConversion
-// "33" - NaN
+// "33" - 33
 // "33abc" - NaN
 // null - 0
 // undefined - NaN

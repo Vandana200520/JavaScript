@@ -13,8 +13,8 @@ console.log(balance.toString().length);   //for length
 console.log(balance.toFixed(2));          //after decimal numbers count
 
 const otherNumber = 120.599
-console.log(otherNumber.toPrecision(2));  // for precision or round off
-console.log(otherNumber.toPrecision(3));  
+console.log(otherNumber.toPrecision(2));  //1.2e+2
+console.log(otherNumber.toPrecision(3));  //for precision or round off
 console.log(otherNumber.toPrecision(4));
 
 const hundreds = 1000000

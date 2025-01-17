@@ -27,10 +27,10 @@ console.log(hundreds.toLocaleString( 'en-IN'));    //commas acc to indian number
 
 
 console.log(Math);     //object
-console.log(Math.abs(-7));
-console.log(Math.round(8.7));
-console.log(Math.ceil(8.3));
-console.log(Math.floor(4.9));
+console.log(Math.abs(-7));        //absolute value (positive)
+console.log(Math.round(8.7));     // round off
+console.log(Math.ceil(8.3));      // ceiling
+console.log(Math.floor(4.9));     // floor
 console.log(Math.sqrt(4));
 console.log(Math.pow(4,2));
 

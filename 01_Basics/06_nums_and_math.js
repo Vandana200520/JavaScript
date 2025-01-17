@@ -17,6 +17,7 @@ console.log(otherNumber.toPrecision(2));  //1.2e+2
 console.log(otherNumber.toPrecision(3));  //for precision or round off
 console.log(otherNumber.toPrecision(4));
 
+//toPrecision - return string
 const hundreds = 1000000
 console.log(hundreds.toLocaleString( 'en-IN'));    //commas acc to indian number system
 

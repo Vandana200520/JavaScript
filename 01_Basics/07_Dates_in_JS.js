@@ -9,14 +9,22 @@ console.log(typeof(myDate));
 
 console.log(myDate);
 console.log(myDate.toString());
+console.log(typeOf myDate);      //object
 
 console.log(myDate.toDateString());  //Date
-console.log(myDate.toLocaleString()); //Date and Time (date// - locale)
+console.log(myDate.toLocaleString()); //Date and Time (date/month/yyyy - locale)
 console.log(myDate.toLocaleDateString()); //Date and Time
 
 console.log(myDate.toJSON());
 console.log(myDate.toISOString());
 
+console.log(myDate.toString());       // Sat Jan 18 2025 18:48:45 GMT+0530 (India Standard Time)
+console.log(myDate.toLocaleString()); // 18/1/2025, 6:48:45 pm
+
+console.log(myDate.toJSON());       // 2025-01-18T13:18:45.964Z
+console.log(myDate.toISOString());  // 2025-01-18T13:18:45.964Z
+
+console.log(myDate.toDateString());  // Sat Jan 18 2025
 
 let myCreatedDate = new Date(2024, 0 , 24)
 //let myCreatedDate = new Date(year, month( 0 - Jan, 1 - Feb) , date)
@@ -28,8 +36,6 @@ console.log(myCreatedDate1.toLocaleString());
 
 let myCreatedDate2 = new Date("01-14-2024")
 console.log(myCreatedDate2.toLocaleString());
-
-
 
 //TimeStamp
 
@@ -59,8 +65,10 @@ console.log(newDate);
 
 
 
-
-
-
-
-
+let start = Date.now();
+setTimeout(() => {
+    const millis = Date.now() - start;
+  
+    console.log(`seconds elapsed = ${Math.floor(millis / 1000)}`);
+    // Expected output: "seconds elapsed = 2"
+  }, 5000);

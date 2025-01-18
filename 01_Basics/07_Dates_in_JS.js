@@ -1,6 +1,7 @@
 // DATES (its an objects)
 
-// JavaScript Date objects represent a single moment in time in a platform-independent format. Date objects encapsulate an integral number that represents milliseconds since the midnight at the beginning of January 1, 1970, UTC (the epoch).
+// JavaScript Date objects represent a single moment in time in a platform-independent format. 
+// Date objects encapsulate an integral number that represents milliseconds since the midnight at the beginning of January 1, 1970, UTC (the epoch).
 
 
 let myDate = new Date()

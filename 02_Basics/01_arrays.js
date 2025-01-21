@@ -1,4 +1,5 @@
-// The Array object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name, and has members for performing common array operations.
+// The Array object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name, 
+// and has members for performing common array operations.
 
 /*
 resizeable
@@ -23,17 +24,19 @@ myArr.unshift(20)       //adds element at start (but shifts other elements forwa
 myArr.shift()           //removes start element
 
 
-console.log(myArr.includes(3));         // Boollean
+console.log(myArr.includes(3));         // Boolean
 console.log(myArr.indexOf(15));        // gives -1
 console.log(myArr.indexOf(2));
 
-const newArr = myArr.join()       //adds all the elements of an array into a string, separated by the specified separator string. and now type converts from array to String.
+const newArr = myArr.join()       //adds all the elements of an array into a string, separated by the specified separator 
+// string. and now type converts from array to String.
 
 console.log(myArr);
 console.log(newArr);
 console.log(typeof newArr);
 
-//  slice , splice (changes original array also - deletes that values from original array)
+//  slice (simply gives the required values, last index excluded)
+// splice (changes original array also - deletes that values from original array)
 
 console.log("A ", myArr);
 

@@ -3,7 +3,7 @@ const marvel_heroes = [ "thor" ,  "Ironman" , "Spiderman"  ]
 
 const dc_heroes = [ "superman" , "flash" , "batman" ]
 
-marvel_heroes.push(dc_heroes)
+marvel_heroes.push(dc_heroes)          //internal array
 
 console.log(marvel_heroes);
 console.log(marvel_heroes[3][1]);
@@ -19,8 +19,8 @@ console.log(all_new_Heros);
 
 const anotherArray =[ 1, 2, 3, [ 4, 5, 6] , 7, [ 6, 7, [ 4, 5]]]
 
-const another_new_Array = anotherArray.flat( Infinity)
-// flat - all internal arrays will come in one real array
+const another_new_Array = anotherArray.flat(Infinity)
+// flat - all internal arrays will come in one real array (we can provide the depth also like here we provided infinity)
 console.log(another_new_Array);
 
 console.log(Array.isArray("Vandana"))

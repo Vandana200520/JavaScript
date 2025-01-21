@@ -8,6 +8,9 @@ zero-indexed
 creates shallow copies(if we change something it get changes to original array)
 */
 
+/*
+A shallow copy creates a new object that references the original object, while a deep copy creates a new object that contains copies of the original object's values
+*/
 const myArr = [0,1,2,3,4,5]
 const Names = ["Vandana" , "Jashan" , "Savita" , "Riya", "Ritu"]
 const myArr2 = new Array(10,20,20,40)

@@ -81,6 +81,7 @@ const {courseInstructor: instructor} = course
 console.log(instructor);
 
 // api calls
+// from api, data can come in any form of datatype, either arrays or object
 
 // JSON 
 // {
@@ -96,5 +97,8 @@ console.log(instructor);
     {}
 ]
 
-// random user me api
+// random user me api (website)- it has some examples of api
+
+// tools to understand
+// json formatter - https://jsonformatter.org/
 

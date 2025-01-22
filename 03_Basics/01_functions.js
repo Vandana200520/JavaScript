@@ -24,9 +24,9 @@ function addTwoNumbers(number1, number2){
     return number1 + number2
 }
 
-const result = addTwoNumbers(3, 5)
-
-// console.log("Result: ", result);
+const result = addTwoNumbers(3, 5)  // it will call so result will be 8
+// console.log("Result: ", result);  // but in variable result there will be UNDEFINED, 
+// bcuz function isn't returning anything, its just printing
 
 
 // any code written after return will not execute
@@ -36,13 +36,13 @@ function addTwoNumbers(number1, number2){
     console.log("vandana");            // unreachable code
 }
 
-function loginUserMessage(username = "pammy"){
+function loginUserMessage(username = "pammy"){   //it means that, if user inputs something - show that, else it will show pammy
     // if(username === undefined){
-    //     console.log("PLease enter a username");
+    //     console.log("Please enter a username");
     //     return                 // if statements is true then code written after return will not execute
     // }
     if(!username){                                  //empty str, or nothing like (), it will work
-        console.log("PLease enter a username");
+        console.log("Please enter a username");
         return        
     }
     return `${username} just logged in`

@@ -2,6 +2,7 @@
 
 // object can be declared as : literal OR constructor
 // constructor - singleton   ( Object.create )
+// singleton - ye apne trah ka ek hi object hai
 
 /******    Object literals {}  ******/
 

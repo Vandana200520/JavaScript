@@ -27,11 +27,14 @@ console.log( userInfo.fullname.userFullname.firstname )
 const obj1 = { 1:"a" , 2:"b"}
 const obj2 = { 3:"a" , 4:"b"}
 
-// const obj3 = { obj1, obj2}
-//const obj3 = Object.assign( target , source)
-// const obj3 = Object.assign({} , obj1, obj2)
+// const obj3 = {obj1, obj2}     // will become nested
+// op - { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
 
-const obj3 = { ...obj1 , ...obj2}
+//const obj3 = Object.assign(target , source)    // assign method syntax
+// const obj3 = Object.assign({} , obj1, obj2)   // use this, bcoz the values will get into empty array
+// op - { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
+
+const obj3 = { ...obj1 , ...obj2}  //spread operator (most used)
 console.log(obj3);
 
 const userArr = [
@@ -45,12 +48,13 @@ const userArr = [
     }
 ]
 
-console.log(userArr[0].id)
+console.log(userArr[0].id)   //userArr is an array, userArr[0] - now we have reached to object, now can use dot notation
 console.log(tinderUser)
 
 console.log(Object.keys(tinderUser))   //gives keys in form of array
 console.log(Object.values(tinderUser))    //gives values in form of array
 console.log(Object.entries(tinderUser))   // nested array key values
+// op - [[key,value],[key,value],[key,value]]
 
 const objectLength = Object.keys(tinderUser).length;
 console.log(objectLength); // 3

@@ -48,18 +48,23 @@ JsUser.email = "vandanagera@chatgpt.com"
   //to change
 console.log( JsUser.email);
 // Object.freeze(JsUser)    // to freeze object
+// after freezing we cant change any of the value, if we try to change,
+// there will be no error thrown , but changes will not occur
 JsUser.email = "vandanagera@microsoft.com"
 console.log( JsUser.email);
+
+console.log(JsUser);  // it will print the whole obj, and also shows symbol key as - [Symbol(key1)]: 'mykey1'
 
 JsUser.greeting = function(){
     console.log(" Hello JS User ");
 }
   
-// console.log(JsUser.greeting);       //undefined(Freeze)  //Function refrence
-// console.log(JsUser.greeting());     // TypeError(Freeze) : Its not a function   // run then undefined
+// console.log(JsUser.greeting);       //undefined(if Freezed)  //otherwise - its only Function refrence, so nothing will appear
+// console.log(JsUser.greeting());     // TypeError(Freeze) : Its not a function
+//otherwise it will show the output
 
 JsUser.greetingTwo = function(){
-  console.log(`Hello JS User , ${this.name}`);   // Using - this
+  console.log(`Hello JS User , ${this.name}`);   // Using - this (if want to access the same object)
 }
 
 console.log(JsUser.greeting()); 

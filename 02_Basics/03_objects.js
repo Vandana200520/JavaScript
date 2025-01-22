@@ -27,6 +27,22 @@ console.log( JsUser["email"]);
 console.log( JsUser["full name"]);
 console.log( JsUser [mySym]);
 
+/*
+console.log(userInfo.mail);
+// console.log(userInfo.last name); // error
+// console.log(userInfo["last name"]);
+// console.log(userInfo["mail"]);
+
+// console.log(userInfo.lastLoggedIn);
+
+
+// // console.log(userInfo["mysym"]);  //undefined
+console.log(userInfo[mysym]);   //mykey1
+// console.log(userInfo.mysym);    //undefined
+
+console.log(typeof userInfo[mysym]);   //string
+
+*/
 
 JsUser.email = "vandanagera@chatgpt.com"
   //to change

@@ -4,6 +4,8 @@
 // constructor - singleton   ( Object.create )
 // singleton - ye apne trah ka ek hi object hai
 
+// when we make obj as literal, then it is not singleton
+
 /******    Object literals {}  ******/
 
 const mySym = Symbol("Key1")

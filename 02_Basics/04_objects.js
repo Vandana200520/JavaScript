@@ -83,7 +83,7 @@ console.log(instructor);
 // api calls
 // from api, data can come in any form of datatype, either arrays or object
 
-// JSON 
+// JSON - javaScript object notation
 // {
 //     "name": "Vandana",
 //     "Course" : " JavaScript",

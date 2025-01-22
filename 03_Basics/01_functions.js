@@ -41,7 +41,7 @@ function loginUserMessage(username = "pammy"){
     //     console.log("PLease enter a username");
     //     return                 // if statements is true then code written after return will not execute
     // }
-    if(!username){
+    if(!username){                                  //empty str, or nothing like (), it will work
         console.log("PLease enter a username");
         return        
     }

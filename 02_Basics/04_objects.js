@@ -80,17 +80,21 @@ console.log(courseInstructor);
 const {courseInstructor: instructor} = course
 console.log(instructor);
 
+// api calls
 
-// JSON
+// JSON 
 // {
 //     "name": "Vandana",
 //     "Course" : " JavaScript",
 //     "price" : "free"
 // }
 
+// in array form
 [
     {},
     {},
     {}
 ]
+
+// random user me api
 

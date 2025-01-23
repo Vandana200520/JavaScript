@@ -28,9 +28,9 @@ function three(){
     console.log("three");
 }
 
-one()
-two()
-three()
+one()         // one two three
+two()         // two three
+three()       // three
 
 
 

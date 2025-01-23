@@ -1,6 +1,7 @@
 // Local and Global scope
 // var is used globally
 
+/*** Global scope is different in case of console and is different in case of node(when we run through node)  ***/
 //var c = 300
 let a = 5
 if (true) {

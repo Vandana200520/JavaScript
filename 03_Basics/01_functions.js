@@ -57,7 +57,7 @@ function loginUserMessage(username = "pammy"){   //it means that, if user inputs
 // function calcCardPrice( num1 ){
 //     return num1
 // }
-// console.log( calcCardPrice(200 , 400, 2000));
+// console.log( calcCardPrice(200 , 400, 2000));     // op- 200
 
 // rest operator ... ( to collect in array)
 
@@ -69,7 +69,7 @@ console.log(calcCardPrice(200 , 400, 2000, 600));  //op - [200, 400, 2000, 600]
 // function calcCardPrice(val1, val2, ...num1 ){   // val1 - 200, val2 - 400, and left are in num1
 //     return num1
 // }
-// console.log(calcCardPrice(200 , 400, 2000, 600));  //op - [2000, 600]
+// console.log(calcCardPrice(200, 400, 2000, 600));  //op - [2000, 600]
 
 const user = {
     username: "vandana",

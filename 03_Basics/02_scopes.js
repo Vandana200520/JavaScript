@@ -1,7 +1,14 @@
 // Local and Global scope
 // var is used globally
 
-/*** Global scope is different in case of console and is different in case of node(when we run through node)  ***/
+/* Global scope is different in case of console and is different in case of node(when we run through node)  */
+/*** 
+    Closures : A technique A closure is the combination of a function bundled together (enclosed) with references to its surrounding state  
+    (the lexical environment). In other words, a closure gives a function access to its outer scope. In JavaScript, closures are created 
+    every time a function is created, at function creation time.   
+***/
+
+
 //var c = 300
 let a = 5
 if (true) {
@@ -56,6 +63,6 @@ function addone(num){
 // Will throw error if used first and declared later(because a variable holds this function)
 
 // addTwo(5)
-const addTwo = function(num){
+const addTwo = function(num){    //its an expression
     return num + 2
 }   

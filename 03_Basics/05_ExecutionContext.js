@@ -1,4 +1,11 @@
+/* two:
+* Global Execution context, function execution context
 
+* there will be new Execution context for every function call
+* two phases:
+* Memory creation phase(only variable names are given memory but the value in them is undefined);
+* execution phase: values are assigned to variables, and calcs are performed.
+*/
 let val1 = 10
 let val2 = 5
 
@@ -32,5 +39,9 @@ one()         // one two three
 two()         // two three
 three()       // three
 
+    /*
+|    
+|
+|
 
-
+    */

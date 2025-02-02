@@ -39,9 +39,11 @@ one()         // one two three
 two()         // two three
 three()       // three
 
-    /*
-|    
-|
-|
+/*   LIFO will be followed:
 
-    */
+    | three     |
+    | two       |
+    | one       |
+    | Global EC |
+
+*/

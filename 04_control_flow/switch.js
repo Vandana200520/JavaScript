@@ -1,7 +1,7 @@
 // break: to break control flow
 /* 
 Switch case: Used for checking too many conditions
-( it checks the conditions and execute the condition is true and after that all are executed, to stop this we use break; )
+( it checks the conditions and execute the condition is true and after that all are executed(except "default"), to stop this we use break; )
 
 Syntax:
 
